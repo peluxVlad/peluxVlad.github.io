@@ -74,17 +74,29 @@
 				</div>
 				<div class="contact_form">
 					<!-- Текстове поле -->
-					<form>
-					<p class="text_form"><b>Форма зворотнього зв'язку</b></p>
-					<input class="input1" type="text"  placeholder="Повне ім'я" maxlength="30">
-
-<input class="input1" type="email"  placeholder="Введіть Email" maxlength="30">
-
-<textarea  class="input2"   placeholder="Питання" ></textarea>
-
-<button class="tab">Надіслати</button>
-		
-</form>
+				<form action="" method="POST">
+					<fieldset>
+							<legend class="text_form">Форма зворотнього зв'язку</legend>
+						<div class="fie">		
+						<label for="user-name">Як вас звати?</label>
+								<br>
+							<input class="input1" type="text" required placeholder="Наприклад, Владислав Пелих" maxlength="30" minlength="3">
+								<br>
+						<label for="user-email">Введіть gmail</label>
+								<br>	
+							<input class="input1" type="email" required placeholder="Наприклад, okyes@gmail.com" maxlength="40" minlength="3">
+								<br>
+						<label for="question">Введіть питання</label>
+								<br>
+							<textarea class="input2" placeholder="Питання" required maxlength="500" minlength="3"></textarea>
+								<br>
+						</div>
+						<div class="tabe">
+							<input class="tab" type="submit" value="Надіслати">
+							<input class="tab" type="reset">
+						</div>			
+					</fieldset>
+				</form>
 				</div>
 			</div>
 				
