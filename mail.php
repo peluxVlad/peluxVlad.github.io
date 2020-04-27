@@ -5,22 +5,20 @@ $mail = $_POST['user_mail'];
 
 if( $_POST){
 
-  require 'phpmailer.php';
+  require 'mail.php';
   require 'smtp.php';
   
 $mail = new PHPMailer;
 $mail->isSMTP();
+$mail->CharSet = 'utf-8'
 
 // Настройки
   $mail->Host = 'smtp.gmail.com';
   $mail->SMTPAuth = true;
-  $mail->CharSet = 'UTF-8';
   $mail->Username = 'dsadassadasdasdas@gmail.com'; 
   $mail->Password = 'aopmaks12'; 
   $mail->SMTPSecure = 'ssl';
   $mail->Port = 465;
-
-
   $mail->setFrom('info@gmail.com'); 
   $mail->addAddress('dsadassadasdasdas@gmail.com');
 
@@ -32,13 +30,12 @@ $mail->Body = '
 	Почта: ' . $mail . '';
 $mail->AltBody = 'dsaddas';
 
-  if( $mail->send() ){
+  if(!$mail->send() ){
     echo 'Письмо не может быть отправлено. ';
     echo 'Ошибка: ' . $mail->ErrorInfo;
  } else{
    	echo "Отправлено"; 
       }
-  die( $answer );
 ?>
 
 
