@@ -1,6 +1,4 @@
 <?php 
-$name = $_POST['user_name'];
-$mail = $_POST['user_mail'];
 if( $_POST){
 
   require 'phpmailer.php';
@@ -13,13 +11,13 @@ $mail->isSMTP();
   $mail->Host = 'smtp.gmail.com';
   $mail->SMTPAuth = true;
   $mail->CharSet = 'UTF-8';
-  $mail->Username = 'vlad0pelux@gmail.com'; // логин от вашей почты
-  $mail->Password = 'Password'; // пароль от почтового ящика
+  $mail->Username = 'dsadassadasdasdas@gmail.com'; // логин от вашей почты
+  $mail->Password = 'aopmaks12'; // пароль от почтового ящика
   $mail->SMTPSecure = 'ssl';
   $mail->Port = 465;
-  $mail->From = 'info@domain.ru '; // адрес почты, с которой идет отправка
-  $mail->FromName = 'Сообщение с domain.ru'; // имя отправителя
-  $mail->addAddress('info@domain.ru');
+  $mail->From = 'info@gmail.com '; // адрес почты, с которой идет отправка
+  $mail->FromName = 'Сообщение с gmail.com'; // имя отправителя
+  $mail->addAddress('info@gmail.com');
  
  // Прикрепление файлов
   for ($ct = 0; $ct < count($_FILES['userfile']['tmp_name']); $ct++) {
@@ -46,5 +44,7 @@ $mail->AltBody = "Имя: {$_POST['name']}\r\n Телефон: {$_POST['nomer']}
     echo 'Ошибка: ' . $mail->ErrorInfo;
   }
   die( $answer );
+
+?>
 
 
