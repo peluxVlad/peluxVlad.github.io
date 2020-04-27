@@ -67,28 +67,28 @@
 				<div class="get_in">
 					<h1 class="text_form">Контактна інформація</h1>
 					<div class="get_div"> <img class="get_icon" src="img3/marker.png"><p class="get_p">Івано-Франківськ, Україна</p></div>
-					<div class="get_div"> <img class="get_icon" src="img3/mail.png"><p class="get_p">saharalekseew@gmail.com</p></div>
-					<div class="get_div"> <img class="get_icon" src="img3/tell.png"><p class="get_p">+380950873415</p></div>
+					<div class="get_div"> <img class="get_icon" src="img3/mail.png"><p class="get_p">w@gmail.com</p></div>
+					<div class="get_div"> <img class="get_icon" src="img3/tell.png"><p class="get_p">+380*******</p></div>
 					<div class="get_div"> <img class="get_icon" src="img3/cross.png"><p class="get_p">Freelance відсутній</p></div>
 
 				</div>
 				<div class="contact_form">
 					<!-- Текстове поле -->
-				<form action="" method="POST">
+				<form action="mail.php" method="POST">
 					<fieldset>
 							<legend class="text_form">Форма зворотнього зв'язку</legend>
 						<div class="fie">		
 						<label for="user-name">Як вас звати?</label>
 								<br>
-							<input class="input1" type="text" required placeholder="Наприклад, Владислав Пелих" maxlength="30" minlength="3">
+							<input class="input1" type="text" name="user_name" required placeholder="Наприклад, Владислав Пелих" maxlength="30" minlength="3">
 								<br>
 						<label for="user-email">Введіть gmail</label>
 								<br>	
-							<input class="input1" type="email" required placeholder="Наприклад, okyes@gmail.com" maxlength="40" minlength="3">
+							<input class="input1" type="email" name="user_mail" required placeholder="Наприклад, okyes@gmail.com" maxlength="40" minlength="3">
 								<br>
 						<label for="question">Введіть питання</label>
 								<br>
-							<textarea class="input2" placeholder="Питання" required maxlength="500" minlength="3"></textarea>
+							<textarea class="input2" name="user_question" placeholder="Питання" required maxlength="500" minlength="3"></textarea>
 								<br>
 						</div>
 						<div class="tabe">
